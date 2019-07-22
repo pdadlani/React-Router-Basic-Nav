@@ -1,8 +1,5 @@
 import React from 'react';
-import { Route, Switch, Link } from "react-router-dom";
-import Home from "./Home.js";
-import About from "./About.js";
-import Contact from "./Contact.js";
+import { Link } from "react-router-dom";
 
 
 const Navigation = () => {
@@ -20,11 +17,6 @@ const Navigation = () => {
           <Link to="/contact">Contact</Link>
         </div>
       </div>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
     </div>
   );
 };
